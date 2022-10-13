@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <script>
+        const name = document.getElementById9('name')
+        const password = document.getElementById('password')
+        const form = document.getElementById('form')
+        const errorElement = document.getElementById('error')
+
+        form.addEventListener('submit', (e) =>
+        {
+            let messages = []
+            if (name.value === '' || name.value == null)
+            {
+                messages.push('Name is required')
+            }
+
+            if (password.value.length >= 6)
+            {
+                messages.push('password must be longer than 6 charater')
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="error"></div>
+    <form action="/" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" />
+
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" />
+            <button type="submit">Submit</button>
+        </div>
+
+
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function fn()
+        {
+            var states = document.getElementById('ddl').value;
+            alert(states);
+
+        }
+        function fn1() {
+
+            alert('hii click there')
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fn()">click me</button>
+    <button onmouseover="fn1()">save</button>
+    <img src="https://www.bing.com/th?id=OIP.TKH-sTOYPrg010xg-ENWLQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2 "alt="Alternate Text"onmouseover="fn1()" />
+    <a href="HTMLPage8.html" onclick="fn()">content</a>
+    <select onchange="fn()" id="ddl"> 
+        <option value="madhya pradesh">mp</option>
+        <option>cg</option>
+        <option>mh</option>
+        <option>gt</option>
+    </select>
+</body>
+</html>
